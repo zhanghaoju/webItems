@@ -1,0 +1,28 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+      "no-console": true,
+      "no-empty-interface": true,
+      "no-shadowed-variable": false,
+      "no-unused-expression": true,
+      "no-unused-variable": true,
+      "whitespace": true,
+      "no-trailing-whitespace": true,
+      "quotemark": [true, "single", "avoid-escape"],
+      "await-promise": true,
+      "no-empty": true,
+      "trailing-comma": [true, {
+        "multiline": {
+          "arrays": "never",
+          "objects": "ignore",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        }
+      }]
+    },
+    "rulesDirectory": []
+}

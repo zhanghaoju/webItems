@@ -1,0 +1,85 @@
+#root {
+  min-height: 100vh;
+}
+.ant-table-sticky-scroll {
+  display: none !important;
+}
+.modal-width40 {
+  width: 40% !important;
+}
+.modal-width {
+  width: 60% !important;
+}
+.modal-height {
+  max-height: calc(100vh - 40vh);
+  //margin-right: -24px;
+  padding-right: 24px;
+  overflow-y: auto;
+  .fr-label.fr-label-row {
+    width: 135.55px !important;
+  }
+}
+.margin-bottom16 {
+  margin-bottom: 16px !important;
+}
+.date-picker100 {
+  width: 100%;
+}
+.contract-modal {
+  .ant-card-body {
+    padding: 0;
+  }
+}
+.ant-table-thead th {
+  font-weight: bold !important;
+  font-size: 15px !important;
+}
+.ant-pro-sider-links {
+  .anticon {
+    background: none !important;
+  }
+}
+.ant-menu-root {
+  > li {
+    .anticon.anticon-dashboard {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center 9px;
+      svg {
+        display: none !important;
+      }
+    }
+    &:nth-child(1) {
+      > .ant-menu-submenu-title {
+        > .ant-pro-menu-item {
+          .anticon {
+            background-image: url('./assets/institution-icon.png');
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .anticon {
+        background-image: url('./assets/product-icon.png');
+      }
+    }
+  }
+}
+.tree-select-width {
+  width: 100% !important;
+}
+.institution-search-form {
+  .ant-form-item {
+    margin-bottom: 0 !important;
+    .ant-col.ant-col-18.ant-form-item-control {
+      max-width: 100% !important;
+      .ant-select-selector,
+      .ant-select-selector:focus-visible {
+        background-color: #fafafa;
+        border-color: #fafafa;
+        box-shadow: none !important;
+      }
+    }
+  }
+}

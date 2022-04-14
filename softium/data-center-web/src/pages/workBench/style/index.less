@@ -1,0 +1,66 @@
+.workBench {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  min-height: 750px;
+  .ant-col-4 {
+    max-width: 16%;
+  }
+  .ant-col-5 {
+    max-width: 20%;
+  }
+  .ant-col-6 {
+    max-width: 25%;
+  }
+  .workBench-simpleOperation-card {
+    height: 100%;
+    .simpleOperation-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 80px;
+      border: 1px solid #f0f0f0;
+    }
+    .simpleOperation-wrap:hover {
+      cursor: pointer;
+    }
+  }
+  .workBench-period-card {
+    height: 100%;
+    .ant-card-extra {
+      padding: 0;
+    }
+    .ant-divider:first-child {
+      border-right: 4px #52c41a solid;
+    }
+  }
+  .workBench-toolBar-card {
+    height: 40%;
+    .workBench-toolBar-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      border: 1px solid #f0f0f0;
+      cursor: pointer;
+    }
+  }
+  .workBench-billMonitor-card,
+  .workBench-interceptProcessing-card,
+  .workBench-matchProcessing-card {
+    .ant-col {
+      text-align: center;
+    }
+    .ant-divider-vertical {
+      height: inherit;
+    }
+  }
+}
+
+.workBench-billMonitor-card,
+.workBench-interceptProcessing-card {
+  height: 100%;
+}

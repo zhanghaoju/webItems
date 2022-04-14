@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.w {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    /*background-color: #f8f9fa;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.animated {
+    -webkit-animation-duration: 2s !important;
+    animation-duration: 1s !important;
+}
+
+.itSafeguard {
+    width: 100%;
+    height: auto;
+    /*background-color: #9FB6CD;*/
+}
+
+.itSafeguardBanner {
+    width: 100%;
+    height: 300px;
+}
+
+.itSafeguardBanner img {
+    width: 100%;
+    height: 300px;
+}
+
+.itSafeguardContent {
+    width: 100%;
+    height: 800px;
+   /* background-color: #666666;*/
+}
+.itSafeguardContentBox{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    /*background-color: #9FB6CD;*/
+}
+.itSafeguardContentBoxImg{
+    float: left;
+    width: 110px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+}.itSafeguardContentBoxImg img{
+     width: 110px;
+     height: 100px;
+ }
+.itSafeguardContentBoxText{
+    float: left;
+    width: 1030px;
+    height: 110px;
+    margin-left: 30px;
+    /*background-color: #9FB6CD;*/
+}
+.itSafeguardContentBoxText div:nth-child(1){
+    width: 100%;
+    height: 30px;
+    border-left: 3px solid #00b2b5;
+    padding-left: 15px;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+   /* background-color: #ff6a00;*/
+}
+.itSafeguardContentBoxText div:nth-child(2){
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 162, 169);
+  /*  background-color: #1e88e5;*/
+}
+.itSafeguardContentBoxText div:nth-child(3){
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #eeeeee;
+}

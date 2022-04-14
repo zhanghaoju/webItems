@@ -1,0 +1,107 @@
+#root {
+  min-height: 100vh;
+}
+
+.back_btn_div {
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ant-tabs-top > .ant-tabs-nav,
+.ant-tabs-bottom > .ant-tabs-nav,
+.ant-tabs-top > div > .ant-tabs-nav,
+.ant-tabs-bottom > div > .ant-tabs-nav {
+  margin: 0 0 0 0 !important;
+}
+
+.ant-menu-sub.ant-menu-inline {
+  padding-left: 5px;
+}
+
+.ant-table-thead th {
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+.ant-card-head-title {
+  font-weight: 700 !important;
+}
+
+.ant-modal-title {
+  font-weight: 700 !important;
+}
+
+.ant-pro-table-search {
+  padding-right: 70px;
+  padding-left: 0;
+}
+
+.fixedHeader .ant-table-sticky-scroll {
+  display: none !important;
+}
+
+.ant-table-sticky-scroll {
+  display: none !important;
+}
+
+.fixedHeader {
+  overflow: unset !important;
+}
+
+table {
+  word-break: break-all;
+}
+
+.ant-menu-root {
+  > li {
+    .anticon.anticon-dashboard {
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center 9px;
+      svg {
+        display: none !important;
+      }
+    }
+    // &:nth-child(1) {
+    //   > .ant-menu-submenu-title {
+    //     > .ant-pro-menu-item {
+    //       .anticon {
+    /* background-image: url( ./assets/workBench.png ); */
+    //       }
+    //     }
+    //   }
+    // }
+    &:nth-child(1) {
+      .anticon {
+        background-image: url('./assets/workBench.png');
+      }
+    }
+    &:nth-child(2) {
+      .anticon {
+        background-image: url('./assets/dataCollect.png');
+      }
+    }
+    &:nth-child(3) {
+      .anticon {
+        background-image: url('./assets/dataWash.png');
+      }
+    }
+    &:nth-child(4) {
+      .anticon {
+        background-image: url('./assets/dataManage.png');
+      }
+    }
+  }
+}
+//上面添加菜单图标时，第一个子元素导致底部伸缩按钮也被覆盖，这里做样式覆盖掉
+.ant-menu-root {
+  > .ant-pro-sider-collapsed-button {
+    &:nth-child(1) {
+      .anticon {
+        background: none;
+      }
+    }
+  }
+}

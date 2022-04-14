@@ -1,0 +1,80 @@
+.action-container {
+  > span {
+    color: @primary-color;
+    cursor: pointer;
+    &:not(:last-child) {
+      display: inline-block;
+      margin-right: 5px;
+      padding-right: 5px;
+      line-height: 1em;
+      border-right: 1px solid #efefef;
+    }
+  }
+  a {
+    display: inline-block;
+    height: 10px;
+    line-height: 1em;
+  }
+}
+.btn-container {
+  .btn-item,
+  > button {
+    margin-right: 10px;
+  }
+}
+.level-header {
+  display: flex;
+  align-items: center;
+  .search {
+    display: inline-block;
+  }
+}
+.detail-header {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+  line-height: 1em;
+  h2 {
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 1em;
+  }
+  span {
+    font-size: 16px;
+  }
+}
+.alias-container {
+  .ant-card-body {
+    padding: 0 !important;
+  }
+  .ant-pro-table-list-toolbar-container {
+    height: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+.search-form {
+  margin-bottom: 20px;
+  padding: 24px 24px 0 24px;
+  background-color: #fff;
+}
+.institution-detail-tabs {
+  padding: 24px;
+  background-color: #fff;
+}
+.agent-detail {
+  display: flex;
+  align-items: baseline;
+  font-weight: bold;
+  line-height: 1em;
+  h2 {
+    line-height: 1em;
+  }
+  span {
+    margin-left: 10px;
+  }
+}
+.search-tooltip {
+  margin-left: 4px;
+  color: rgba(0, 0, 0, 0.45);
+}

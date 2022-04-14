@@ -1,0 +1,56 @@
+{
+  "name": "enterprise-web",
+  "version": "1.0.0",
+  "description": "A project named tests",
+  "private": true,
+  "scripts": {
+    "start": "cross-env UMI_ENV=dev umi dev",
+    "start:noMock": "cross-env UMI_ENV=dev umi dev",
+    "build": "cross-env UMI_ENV=cloud umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "author": "",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@ant-design/pro-layout": "^6.2.5",
+    "@ant-design/pro-table": "^2.34.4",
+    "@types/mockjs": "^1.0.2",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.2.10",
+    "@vulcan/utils": "1.2.0",
+    "antd": "^4.8.6",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "jsling": "^0.0.1",
+    "jslinq": "^1.0.22",
+    "lint-staged": "^10.0.7",
+    "mockjs": "^1.1.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "umi": "^3.2.10",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/lodash": "^4.14.168",
+    "@umijs/plugin-qiankun": "^2.17.3",
+    "@umijs/preset-ui": "^2.2.2",
+    "cross-env": "^7.0.2",
+    "umi-plugin-antd-icon-config": "^2.0.3"
+  }
+}

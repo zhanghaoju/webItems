@@ -1,0 +1,44 @@
+.formListItemContainer {
+  background-color: #f7f7f7;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.formListItemHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addBtnOut {
+  width: calc(100%);
+  margin-bottom: 8px;
+  position: fixed;
+  top: 49px;
+  z-index: 99;
+  background: rgb(240, 242, 245);
+  height: 65px;
+  margin-left: -24.5px;
+  margin-right: 24.5px;
+  .inner {
+    width: calc(100% - 258px);
+    background: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    margin-top: 25px;
+    padding: 8px 25px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .addBtnOut {
+    .inner {
+      width: calc(100% - 97px);
+    }
+  }
+}
+@media screen and (max-width: 766px) {
+  .addBtnOut {
+    .inner {
+      width: calc(100% - 50px);
+    }
+  }
+}
