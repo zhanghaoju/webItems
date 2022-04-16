@@ -1,0 +1,2784 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.w {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    /*background-color: #f8f9fa;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 3000px;
+    background-color: #f8f9fa;
+}
+
+/*轮播背景*/
+.swiper {
+    width: auto;
+    height: 552px;
+    cursor: default;
+    display: block;
+    outline: none;
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 552px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.productDes {
+    width: 100%;
+    height: 140px;
+    /* margin-top: 40px;*/
+    background-color: #ffffff;
+}
+
+
+.productDesInterior {
+    position: relative;
+    top: 20px;
+    left: 120px;
+    width: 100%;
+    height: 100%;
+    /* background-color: #1e88e5;*/
+}
+
+
+.productDesInterior_left {
+    position: absolute;
+    width: 730px;
+    height: auto;
+    /*background-color: #ff6a00;*/
+}
+
+.productDesInterior_left p {
+    padding-bottom: 15px;
+    font-size: 35px;
+    color: rgb(61, 66, 70);
+    font-family: "Alibaba Sans";
+}
+
+.productDesInterior_left span {
+    font-size: 16px;
+    font-family: 'Alibaba Sans';
+    color: rgb(153, 162, 169);
+    overflow: inherit;
+}
+
+
+.productDesInterior_right {
+    position: absolute;
+    left: 810px;
+    margin-top: 30px;
+    width: 154px;
+    height: 47px;
+    line-height: 47px;
+    border-radius: 10px;
+    background: #00b3b9;
+}
+
+.productDesInterior_right .font {
+    text-align: center;
+}
+
+.productDesInterior_right .font a {
+    font-size: 20px;
+    font-family: 'Alibaba Sans';
+    text-align: center;
+    color: #ffffff;
+}
+
+/*新闻资讯*/
+.news {
+    width: 100%;
+    height: 750px;
+    /*background-color: #aaaaaa;*/
+}
+
+.newsTitle {
+    margin-left: 50%;
+    padding-top: 20px;
+}
+
+.newsTitle div:nth-child(1) {
+    font-size: 26px;
+    color: rgb(34, 35, 37);
+}
+
+.newsTitle div:nth-child(2) {
+    font-size: 14px;
+    color: rgb(153, 162, 169);
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.newsTitle div:nth-child(3) {
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+
+/*新闻资讯*/
+.newsContent {
+    margin-top: 80px;
+}
+
+.newContent_left {
+    float: left;
+    height: 480px;
+    width: 370px;
+    margin-left: 30px;
+    /* background-color: #1e88e5;*/
+}
+
+.newContent_left div:nth-child(1) img {
+    height: 219px;
+    width: 370px;
+}
+
+.newContent_left div:nth-child(2) img {
+    height: 219px;
+    width: 370px;
+    margin-top: 20px;
+}
+
+.newContent_right {
+    float: left;
+    width: 720px;
+    height: 500px;
+    margin-left: 50px;
+    /*background-color: #00b48e;*/
+
+}
+
+.newContent_right .r_box {
+    position: relative;
+    margin-top: -20px;
+    width: 720px;
+    height: 170px;
+    /* background-color: #1e88e5;*/
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.newContent_right .r_box:nth-child(3) {
+    position: relative;
+    margin-top: -20px;
+    width: 720px;
+    height: 170px;
+    /* background-color: #1e88e5;*/
+    border-bottom: 0px dashed #e5e5e5;
+}
+
+.newContent_right .r_box .r_boxDate {
+    position: absolute;
+    left: 20px;
+    top: 47px;
+    width: 84px;
+    height: 84px;
+    background-color: #f2f2f2;
+}
+
+.newContent_right .r_box .r_boxDate div:nth-child(1) {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    color: #222222;
+}
+
+.newContent_right .r_box .r_boxDate div:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #222222;
+}
+
+.newContent_right .r_box .r_boxText {
+    position: absolute;
+    left: 120px;
+    top: 50px;
+
+}
+
+.newContent_right .r_box .r_boxText div:nth-child(1) a {
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #2C2F33;
+}
+
+.newContent_right .r_box .r_boxText div:nth-child(1) a:hover {
+    color: #00b3b5;
+}
+
+.newContent_right .r_box .r_boxText div:nth-child(2) {
+    width: 580px;
+    height: 60px;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: rgb(153, 162, 169);
+}
+
+/*产品中心*/
+.productCenter {
+    width: 1200px;
+    height: 740px;
+}
+
+.productTitle {
+    margin-left: 50%;
+    padding-top: 20px;
+}
+
+.productTitle div:nth-child(1) {
+    font-size: 26px;
+    color: rgb(34, 35, 37);
+}
+
+.productTitle div:nth-child(2) {
+    font-size: 14px;
+    color: rgb(153, 162, 169);
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.productTitle div:nth-child(3) {
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+
+.productCenter {
+    font-family: "Microsoft YaHei";
+}
+
+.productCenter .productPosition {
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.productCenter .productLeft {
+    position: relative;
+    left: 0px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    /*background-color: #1e88e5;*/
+}
+
+.productCenter .productLeft .productLeftContent div:nth-child(1) img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.productCenter .productLeft .productLeftContent div:nth-child(2) {
+    position: absolute;
+    top: 7px;
+    left: 50px;
+}
+
+.productCenter .productLeft .productLeftContent div:nth-child(3) {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 12px;
+    color: rgb(153, 162, 169);
+}
+
+.productCenter .productMiddle {
+    position: relative;
+    left: 140px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    /*background-color: #aaaaaa;*/
+}
+
+.productCenter .productMiddle .productMiddleContent div:nth-child(1) img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.productCenter .productMiddle .productMiddleContent div:nth-child(2) {
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    font-family: "Microsoft YaHei";
+}
+
+.productCenter .productMiddle .productMiddleContent div:nth-child(3) {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 162, 169);
+}
+
+.productCenter .productRight {
+    position: relative;
+    left: 260px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    /*background-color: #ff6a00;*/
+}
+
+.productCenter .productRight .productRightContent div:nth-child(1) img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.productCenter .productRight .productRightContent div:nth-child(2) {
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    font-family: "Microsoft YaHei";
+}
+
+.productCenter .productRight .productRightContent div:nth-child(3) {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: rgb(153, 162, 169);
+}
+
+/*IT小助手*/
+.itHelper {
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+}
+
+.itHelperTitle {
+    margin-left: 50%;
+    padding-top: 30px;
+}
+
+.itHelperTitle div:nth-child(1) {
+    margin-left: 10px;
+    font-size: 26px;
+    color: rgb(34, 35, 37);
+}
+
+.itHelperTitle div:nth-child(2) {
+    font-size: 14px;
+    color: rgb(153, 162, 169);
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.itHelperTitle div:nth-child(3) {
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+
+.itAssistant {
+    position: relative;
+    top: 10px;
+    height: 450px;
+    background-color: #f9f9f9;
+}
+
+.itAssistant .itAssistantTopTwice {
+    width: 100%;
+    height: 210px;
+    /*background-color: #ff6a00;*/
+}
+
+.itAssistant .itAssistantTopTwice .itAssistantTop {
+    position: relative;
+    top: 10px;
+    left: 82px;
+    float: left;
+    width: 468px;
+    height: 196px;
+    margin-left: 20px;
+    background-color: #ffffff;
+}
+
+.itAssistant .itAssistantTop div:nth-child(1) {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 200px;
+    height: 150px;
+    /* background-color: #ff6a00;*/
+}
+
+.itAssistantTopText > p {
+    font-size: 20px;
+    font-family: "Microsoft YaHei"
+}
+
+.itAssistantTopText > span {
+    font-size: 12px;
+    color: rgb(153, 162, 169);
+}
+
+.itAssistant .itAssistantTop div:nth-child(2) {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 210px;
+    height: 180px;
+    /* background-color: #ff6a00;*/
+}
+
+.itAssistant .itAssistantTop div:nth-child(2) img {
+    width: 210px;
+    height: 180px;
+}
+
+/*报障方式*/
+.stoppage {
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+}
+
+.stoppageTitle {
+    margin-left: 50%;
+}
+
+.stoppageTitle div:nth-child(1) {
+    margin-left: 10px;
+    font-size: 26px;
+    color: rgb(34, 35, 37);
+}
+
+.stoppageTitle div:nth-child(2) {
+    font-size: 14px;
+    color: rgb(153, 162, 169);
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.stoppageTitle div:nth-child(3) {
+    width: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+
+.stoppage .stoppageContent {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 321px;
+    /* background-color: #1e88e5;*/
+}
+
+.stoppage .stoppageContent .stoppageContentBox {
+    float: left;
+    width: 285px;
+    height: 321px;
+    margin-left: 15px;
+}
+
+.stoppage .stoppageContent .stoppageContentBox div:nth-child(1) {
+    position: absolute;
+    width: 285px;
+    height: 249px;
+    background-color: #ff6a00;
+}
+
+.stoppage .stoppageContent .stoppageContentBox div:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    width: 285px;
+    height: 72px;
+    background-color: #00b2b5;
+}
+
+.stoppage .stoppageContent .stoppageContentBox .img {
+    position: absolute;
+    bottom: 0;
+    width: 285px;
+    height: 249px;
+    background-color: #ff6a00;
+}
+
+.stoppage .stoppageContent .stoppageContentBox .text {
+    position: absolute;
+    top: 0;
+    width: 285px;
+    height: 72px;
+    background-color: #00b2b5;
+}
+
+.stoppageContentBoxImg {
+    width: 285px;
+    height: 249px;
+}
+
+.stoppageContentBoxA {
+    display: inline-block;
+    width: 285px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    font-family: "Microsoft YaHei";
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 720px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .w {
+        max-width: auto;
+        height: auto;
+        margin: 0 auto;
+        /*background-color: #f8f9fa;*/
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .main {
+        width: auto;
+        height: 3000px;
+        background-color: #f8f9fa;
+    }
+
+    /*轮播背景*/
+    .swiper {
+        width: auto;
+        height: 200px;
+        cursor: default;
+        display: block;
+        outline: none;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 552px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .productDes {
+        width: auto;
+        height: 120px;
+        padding-left: 7px;
+        /* margin-top: 40px; */
+        background-color: #ffffff;
+    }
+
+
+    .productDesInterior {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 100%;
+    }
+
+
+    .productDesInterior_left {
+        position: absolute;
+        width: auto;
+        height: auto;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productDesInterior_left p {
+        padding-bottom: 15px;
+        font-size: 16px;
+        color: rgb(61, 66, 70);
+        font-family: "Alibaba Sans";
+    }
+
+    .productDesInterior_left span {
+        font-size: 12px;
+        font-family: 'Alibaba Sans';
+        color: rgb(153, 162, 169);
+        overflow: inherit;
+    }
+
+
+    .productDesInterior_right {
+        position: absolute;
+        left: 420px;
+        margin-top: -3px;
+        width: 85px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 10px;
+        background: #00b3b9;
+    }
+
+    .productDesInterior_right .font {
+        text-align: center;
+    }
+
+    .productDesInterior_right .font a {
+        font-size: 14px;
+        font-family: 'Alibaba Sans';
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /*新闻资讯*/
+    .news {
+        width: 1200px;
+        height: 750px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .newsTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .newsTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .newsTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .newsTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    /*新闻资讯*/
+    .newsContent {
+        margin-top: 80px;
+    }
+
+    .newContent_left {
+        float: left;
+        height: 480px;
+        width: 370px;
+        margin-left: 30px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .newContent_left div:nth-child(1) img {
+        height: 219px;
+        width: 370px;
+    }
+
+    .newContent_left div:nth-child(2) img {
+        height: 219px;
+        width: 370px;
+        margin-top: 20px;
+    }
+
+    .newContent_right {
+        float: left;
+        width: 720px;
+        height: 500px;
+        margin-left: 50px;
+        /*background-color: #00b48e;*/
+
+    }
+
+    .newContent_right .r_box {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 1px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box:nth-child(3) {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 0px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box .r_boxDate {
+        position: absolute;
+        left: 20px;
+        top: 47px;
+        width: 84px;
+        height: 84px;
+        background-color: #f2f2f2;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(1) {
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(2) {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxText {
+        position: absolute;
+        left: 120px;
+        top: 50px;
+
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a {
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        color: #2C2F33;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a:hover {
+        color: #00b3b5;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(2) {
+        width: 580px;
+        height: 60px;
+        margin-top: 10px;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    /*产品中心*/
+    .productCenter {
+        width: 1200px;
+        height: 740px;
+    }
+
+    .productTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .productTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .productTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    .productTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .productCenter {
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productPosition {
+        width: auto;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .productCenter .productLeft {
+        position: relative;
+        left: 0px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #1e88e5;*/
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productMiddle {
+        position: relative;
+        left: 140px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productRight {
+        position: relative;
+        left: 260px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    /*IT小助手*/
+    .itHelper {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .itHelperTitle {
+        margin-left: 50%;
+        padding-top: 30px;
+    }
+
+    .itHelperTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .itHelperTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .itHelperTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .itAssistant {
+        position: relative;
+        top: 10px;
+        height: 450px;
+        background-color: #f9f9f9;
+    }
+
+    .itAssistant .itAssistantTopTwice {
+        width: 100%;
+        height: 210px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTopTwice .itAssistantTop {
+        position: relative;
+        top: 10px;
+        left: 82px;
+        float: left;
+        width: 468px;
+        height: 196px;
+        margin-left: 20px;
+        background-color: #ffffff;
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(1) {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 200px;
+        height: 150px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistantTopText > p {
+        font-size: 20px;
+        font-family: "Microsoft YaHei"
+    }
+
+    .itAssistantTopText > span {
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 210px;
+        height: 180px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) img {
+        width: 210px;
+        height: 180px;
+    }
+
+    /*报障方式*/
+    .stoppage {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .stoppageTitle {
+        margin-left: 50%;
+    }
+
+    .stoppageTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .stoppageTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .stoppageTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 40px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .stoppage .stoppageContent {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 321px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox {
+        float: left;
+        width: 285px;
+        height: 321px;
+        margin-left: 15px;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(1) {
+        position: absolute;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .img {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .text {
+        position: absolute;
+        top: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppageContentBoxImg {
+        width: 285px;
+        height: 249px;
+    }
+
+    .stoppageContentBoxA {
+        display: inline-block;
+        width: 285px;
+        height: 72px;
+        text-align: center;
+        line-height: 72px;
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+    }
+
+
+}
+@media screen and (max-width: 420px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .w {
+        max-width: auto;
+        height: auto;
+        margin: 0 auto;
+        /*background-color: #f8f9fa;*/
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .main {
+        width: auto;
+        height: 3000px;
+        background-color: #f8f9fa;
+    }
+
+    /*轮播背景*/
+    .swiper {
+        width: auto;
+        height: 200px;
+        cursor: default;
+        display: block;
+        outline: none;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 552px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .productDes {
+        width: auto;
+        height: 120px;
+        padding-left: 7px;
+        /* margin-top: 40px; */
+        background-color: #ffffff;
+    }
+
+
+    .productDesInterior {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 100%;
+    }
+
+
+    .productDesInterior_left {
+        position: absolute;
+        width: auto;
+        height: auto;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productDesInterior_left p {
+        padding-bottom: 15px;
+        font-size: 16px;
+        color: rgb(61, 66, 70);
+        font-family: "Alibaba Sans";
+    }
+
+    .productDesInterior_left span {
+        font-size: 12px;
+        font-family: 'Alibaba Sans';
+        color: rgb(153, 162, 169);
+        overflow: inherit;
+    }
+
+
+    .productDesInterior_right {
+        position: absolute;
+        left: 270px;
+        margin-top: -3px;
+        width: 85px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 10px;
+        background: #00b3b9;
+    }
+
+    .productDesInterior_right .font {
+        text-align: center;
+    }
+
+    .productDesInterior_right .font a {
+        font-size: 14px;
+        font-family: 'Alibaba Sans';
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /*新闻资讯*/
+    .news {
+        width: 1200px;
+        height: 750px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .newsTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .newsTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .newsTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .newsTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    /*新闻资讯*/
+    .newsContent {
+        margin-top: 80px;
+    }
+
+    .newContent_left {
+        float: left;
+        height: 480px;
+        width: 370px;
+        margin-left: 30px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .newContent_left div:nth-child(1) img {
+        height: 219px;
+        width: 370px;
+    }
+
+    .newContent_left div:nth-child(2) img {
+        height: 219px;
+        width: 370px;
+        margin-top: 20px;
+    }
+
+    .newContent_right {
+        float: left;
+        width: 720px;
+        height: 500px;
+        margin-left: 50px;
+        /*background-color: #00b48e;*/
+
+    }
+
+    .newContent_right .r_box {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 1px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box:nth-child(3) {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 0px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box .r_boxDate {
+        position: absolute;
+        left: 20px;
+        top: 47px;
+        width: 84px;
+        height: 84px;
+        background-color: #f2f2f2;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(1) {
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(2) {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxText {
+        position: absolute;
+        left: 120px;
+        top: 50px;
+
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a {
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        color: #2C2F33;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a:hover {
+        color: #00b3b5;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(2) {
+        width: 580px;
+        height: 60px;
+        margin-top: 10px;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    /*产品中心*/
+    .productCenter {
+        width: 1200px;
+        height: 740px;
+    }
+
+    .productTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .productTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .productTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    .productTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .productCenter {
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productPosition {
+        width: auto;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .productCenter .productLeft {
+        position: relative;
+        left: 0px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #1e88e5;*/
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productMiddle {
+        position: relative;
+        left: 140px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productRight {
+        position: relative;
+        left: 260px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    /*IT小助手*/
+    .itHelper {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .itHelperTitle {
+        margin-left: 50%;
+        padding-top: 30px;
+    }
+
+    .itHelperTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .itHelperTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .itHelperTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .itAssistant {
+        position: relative;
+        top: 10px;
+        height: 450px;
+        background-color: #f9f9f9;
+    }
+
+    .itAssistant .itAssistantTopTwice {
+        width: 100%;
+        height: 210px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTopTwice .itAssistantTop {
+        position: relative;
+        top: 10px;
+        left: 82px;
+        float: left;
+        width: 468px;
+        height: 196px;
+        margin-left: 20px;
+        background-color: #ffffff;
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(1) {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 200px;
+        height: 150px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistantTopText > p {
+        font-size: 20px;
+        font-family: "Microsoft YaHei"
+    }
+
+    .itAssistantTopText > span {
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 210px;
+        height: 180px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) img {
+        width: 210px;
+        height: 180px;
+    }
+
+    /*报障方式*/
+    .stoppage {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .stoppageTitle {
+        margin-left: 50%;
+    }
+
+    .stoppageTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .stoppageTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .stoppageTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 40px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .stoppage .stoppageContent {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 321px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox {
+        float: left;
+        width: 285px;
+        height: 321px;
+        margin-left: 15px;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(1) {
+        position: absolute;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .img {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .text {
+        position: absolute;
+        top: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppageContentBoxImg {
+        width: 285px;
+        height: 249px;
+    }
+
+    .stoppageContentBoxA {
+        display: inline-block;
+        width: 285px;
+        height: 72px;
+        text-align: center;
+        line-height: 72px;
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+    }
+
+
+}
+@media screen and (max-width: 320px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .w {
+        max-width: auto;
+        height: auto;
+        margin: 0 auto;
+        /*background-color: #f8f9fa;*/
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .main {
+        width: auto;
+        height: 3000px;
+        background-color: #f8f9fa;
+    }
+
+    /*轮播背景*/
+    .swiper {
+        width: auto;
+        height: 200px;
+        cursor: default;
+        display: block;
+        outline: none;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 552px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .productDes {
+        width: auto;
+        height: 130px;
+        padding-left: 7px;
+        /* margin-top: 40px; */
+        background-color: #ffffff;
+    }
+
+
+    .productDesInterior {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 100%;
+    }
+
+
+    .productDesInterior_left {
+        position: absolute;
+        width: auto;
+        height: auto;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productDesInterior_left p {
+        padding-bottom: 15px;
+        font-size: 14px;
+        color: rgb(61, 66, 70);
+        font-family: "Alibaba Sans";
+    }
+
+    .productDesInterior_left span {
+        font-size: 12px;
+        font-family: 'Alibaba Sans';
+        color: rgb(153, 162, 169);
+        overflow: inherit;
+    }
+
+
+    .productDesInterior_right {
+        position: absolute;
+        left: 226px;
+        margin-top: -3px;
+        width: 85px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 10px;
+        background: #00b3b9;
+    }
+
+    .productDesInterior_right .font {
+        text-align: center;
+    }
+
+    .productDesInterior_right .font a {
+        font-size: 14px;
+        font-family: 'Alibaba Sans';
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /*新闻资讯*/
+    .news {
+        width: 1200px;
+        height: 750px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .newsTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .newsTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .newsTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .newsTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    /*新闻资讯*/
+    .newsContent {
+        margin-top: 80px;
+    }
+
+    .newContent_left {
+        float: left;
+        height: 480px;
+        width: 370px;
+        margin-left: 30px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .newContent_left div:nth-child(1) img {
+        height: 219px;
+        width: 370px;
+    }
+
+    .newContent_left div:nth-child(2) img {
+        height: 219px;
+        width: 370px;
+        margin-top: 20px;
+    }
+
+    .newContent_right {
+        float: left;
+        width: 720px;
+        height: 500px;
+        margin-left: 50px;
+        /*background-color: #00b48e;*/
+
+    }
+
+    .newContent_right .r_box {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 1px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box:nth-child(3) {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 0px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box .r_boxDate {
+        position: absolute;
+        left: 20px;
+        top: 47px;
+        width: 84px;
+        height: 84px;
+        background-color: #f2f2f2;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(1) {
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(2) {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxText {
+        position: absolute;
+        left: 120px;
+        top: 50px;
+
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a {
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        color: #2C2F33;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a:hover {
+        color: #00b3b5;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(2) {
+        width: 580px;
+        height: 60px;
+        margin-top: 10px;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    /*产品中心*/
+    .productCenter {
+        width: 1200px;
+        height: 740px;
+    }
+
+    .productTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .productTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .productTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    .productTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .productCenter {
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productPosition {
+        width: auto;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .productCenter .productLeft {
+        position: relative;
+        left: 0px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #1e88e5;*/
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productMiddle {
+        position: relative;
+        left: 140px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productRight {
+        position: relative;
+        left: 260px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    /*IT小助手*/
+    .itHelper {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .itHelperTitle {
+        margin-left: 50%;
+        padding-top: 30px;
+    }
+
+    .itHelperTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .itHelperTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .itHelperTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .itAssistant {
+        position: relative;
+        top: 10px;
+        height: 450px;
+        background-color: #f9f9f9;
+    }
+
+    .itAssistant .itAssistantTopTwice {
+        width: 100%;
+        height: 210px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTopTwice .itAssistantTop {
+        position: relative;
+        top: 10px;
+        left: 82px;
+        float: left;
+        width: 468px;
+        height: 196px;
+        margin-left: 20px;
+        background-color: #ffffff;
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(1) {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 200px;
+        height: 150px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistantTopText > p {
+        font-size: 20px;
+        font-family: "Microsoft YaHei"
+    }
+
+    .itAssistantTopText > span {
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 210px;
+        height: 180px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) img {
+        width: 210px;
+        height: 180px;
+    }
+
+    /*报障方式*/
+    .stoppage {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .stoppageTitle {
+        margin-left: 50%;
+    }
+
+    .stoppageTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .stoppageTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .stoppageTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 40px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .stoppage .stoppageContent {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 321px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox {
+        float: left;
+        width: 285px;
+        height: 321px;
+        margin-left: 15px;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(1) {
+        position: absolute;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .img {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .text {
+        position: absolute;
+        top: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppageContentBoxImg {
+        width: 285px;
+        height: 249px;
+    }
+
+    .stoppageContentBoxA {
+        display: inline-block;
+        width: 285px;
+        height: 72px;
+        text-align: center;
+        line-height: 72px;
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+    }
+
+
+}
+@media screen and (max-width: 280px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .w {
+        max-width: auto;
+        height: auto;
+        margin: 0 auto;
+        /*background-color: #f8f9fa;*/
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .main {
+        width: auto;
+        height: 3000px;
+        background-color: #f8f9fa;
+    }
+
+    /*轮播背景*/
+    .swiper {
+        width: auto;
+        height: 200px;
+        cursor: default;
+        display: block;
+        outline: none;
+        margin: 0px auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 552px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .productDes {
+        width: auto;
+        height: 130px;
+        padding-left: 7px;
+        /* margin-top: 40px; */
+        background-color: #ffffff;
+    }
+
+
+    .productDesInterior {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        width: auto;
+        height: 100%;
+    }
+
+
+    .productDesInterior_left {
+        position: absolute;
+        width: auto;
+        height: auto;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productDesInterior_left p {
+        padding-bottom: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(61, 66, 70);
+        font-family: "Alibaba Sans";
+    }
+
+    .productDesInterior_left span {
+        font-size: 12px;
+        font-family: 'Alibaba Sans';
+        color: rgb(153, 162, 169);
+        overflow: inherit;
+    }
+
+
+    .productDesInterior_right {
+        position: absolute;
+        left: 186px;
+        margin-top: 0px;
+        width: 74px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 10px;
+        background: #00b3b9;
+    }
+
+    .productDesInterior_right .font {
+        text-align: center;
+    }
+
+    .productDesInterior_right .font a {
+        font-size: 12px;
+        font-family: 'Alibaba Sans';
+        text-align: center;
+        color: #ffffff;
+    }
+
+    /*新闻资讯*/
+    .news {
+        width: 1200px;
+        height: 750px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .newsTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .newsTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .newsTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .newsTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    /*新闻资讯*/
+    .newsContent {
+        margin-top: 80px;
+    }
+
+    .newContent_left {
+        float: left;
+        height: 480px;
+        width: 370px;
+        margin-left: 30px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .newContent_left div:nth-child(1) img {
+        height: 219px;
+        width: 370px;
+    }
+
+    .newContent_left div:nth-child(2) img {
+        height: 219px;
+        width: 370px;
+        margin-top: 20px;
+    }
+
+    .newContent_right {
+        float: left;
+        width: 720px;
+        height: 500px;
+        margin-left: 50px;
+        /*background-color: #00b48e;*/
+
+    }
+
+    .newContent_right .r_box {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 1px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box:nth-child(3) {
+        position: relative;
+        margin-top: -20px;
+        width: 720px;
+        height: 170px;
+        /* background-color: #1e88e5;*/
+        border-bottom: 0px dashed #e5e5e5;
+    }
+
+    .newContent_right .r_box .r_boxDate {
+        position: absolute;
+        left: 20px;
+        top: 47px;
+        width: 84px;
+        height: 84px;
+        background-color: #f2f2f2;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(1) {
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: "Microsoft YaHei";
+        text-align: center;
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxDate div:nth-child(2) {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        color: #222222;
+    }
+
+    .newContent_right .r_box .r_boxText {
+        position: absolute;
+        left: 120px;
+        top: 50px;
+
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a {
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        color: #2C2F33;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(1) a:hover {
+        color: #00b3b5;
+    }
+
+    .newContent_right .r_box .r_boxText div:nth-child(2) {
+        width: 580px;
+        height: 60px;
+        margin-top: 10px;
+        overflow: hidden;
+        white-space: normal;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    /*产品中心*/
+    .productCenter {
+        width: 1200px;
+        height: 740px;
+    }
+
+    .productTitle {
+        margin-left: 50%;
+        padding-top: 20px;
+    }
+
+    .productTitle div:nth-child(1) {
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .productTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    .productTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .productCenter {
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productPosition {
+        width: auto;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .productCenter .productLeft {
+        position: relative;
+        left: 0px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #1e88e5;*/
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+    }
+
+    .productCenter .productLeft .productLeftContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productMiddle {
+        position: relative;
+        left: 140px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #aaaaaa;*/
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productMiddle .productMiddleContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    .productCenter .productRight {
+        position: relative;
+        left: 260px;
+        float: left;
+        width: 300px;
+        height: 200px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(1) img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 50px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .productCenter .productRight .productRightContent div:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        font-size: 12px;
+        font-family: "Microsoft YaHei";
+        color: rgb(153, 162, 169);
+    }
+
+    /*IT小助手*/
+    .itHelper {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .itHelperTitle {
+        margin-left: 50%;
+        padding-top: 30px;
+    }
+
+    .itHelperTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .itHelperTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 20px;
+    }
+
+    .itHelperTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .itAssistant {
+        position: relative;
+        top: 10px;
+        height: 450px;
+        background-color: #f9f9f9;
+    }
+
+    .itAssistant .itAssistantTopTwice {
+        width: 100%;
+        height: 210px;
+        /*background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTopTwice .itAssistantTop {
+        position: relative;
+        top: 10px;
+        left: 82px;
+        float: left;
+        width: 468px;
+        height: 196px;
+        margin-left: 20px;
+        background-color: #ffffff;
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(1) {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        width: 200px;
+        height: 150px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistantTopText > p {
+        font-size: 20px;
+        font-family: "Microsoft YaHei"
+    }
+
+    .itAssistantTopText > span {
+        font-size: 12px;
+        color: rgb(153, 162, 169);
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 210px;
+        height: 180px;
+        /* background-color: #ff6a00;*/
+    }
+
+    .itAssistant .itAssistantTop div:nth-child(2) img {
+        width: 210px;
+        height: 180px;
+    }
+
+    /*报障方式*/
+    .stoppage {
+        width: 100%;
+        height: 600px;
+        background-color: #ffffff;
+    }
+
+    .stoppageTitle {
+        margin-left: 50%;
+    }
+
+    .stoppageTitle div:nth-child(1) {
+        margin-left: 10px;
+        font-size: 26px;
+        color: rgb(34, 35, 37);
+    }
+
+    .stoppageTitle div:nth-child(2) {
+        font-size: 14px;
+        color: rgb(153, 162, 169);
+        line-height: 30px;
+        padding-left: 30px;
+    }
+
+    .stoppageTitle div:nth-child(3) {
+        width: 40px;
+        margin-left: 40px;
+        margin-top: 10px;
+        border-bottom: 1px solid rgb(6, 178, 182);
+    }
+
+    .stoppage .stoppageContent {
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 321px;
+        /* background-color: #1e88e5;*/
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox {
+        float: left;
+        width: 285px;
+        height: 321px;
+        margin-left: 15px;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(1) {
+        position: absolute;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox div:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .img {
+        position: absolute;
+        bottom: 0;
+        width: 285px;
+        height: 249px;
+        background-color: #ff6a00;
+    }
+
+    .stoppage .stoppageContent .stoppageContentBox .text {
+        position: absolute;
+        top: 0;
+        width: 285px;
+        height: 72px;
+        background-color: #00b2b5;
+    }
+
+    .stoppageContentBoxImg {
+        width: 285px;
+        height: 249px;
+    }
+
+    .stoppageContentBoxA {
+        display: inline-block;
+        width: 285px;
+        height: 72px;
+        text-align: center;
+        line-height: 72px;
+        font-family: "Microsoft YaHei";
+        color: #ffffff;
+    }
+
+
+}
