@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    /*height: 100%;*/
+    height: 3000px;
+    background-color: #f8f9fa;
+}
+a{
+    text-decoration: none;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(top, #222, #333);
+}
+
+section {
+    display: flex;
+    position: relative;
+}
+.banner{
+    display: flex;
+}
+.banner img {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+}
+
+.searchInput {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 50%;
+    height: 70px;
+    /*border: 1px solid rebeccapurple;*/
+    border-radius: 15px;
+    background: rgba(31, 56, 88, .6);
+}
+
+.searchInput input {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 50px;
+    outline: none;
+}
+
+.searchInput .searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    width: 18%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+/*产品说明*/
+.Grid {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.Grid-cell {
+    flex: 1;
+    position: absolute;
+    margin-right: 100px;
+}
+.Grid-cell p{
+    color: #a9afb5;
+}
+.Grid-cell:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 100px;
+    top: 20%;
+    width: 10%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: green;
+}
+.Grid-cell:nth-child(2) a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+}
+.Grid-cell:nth-child(2) a:hover{
+    color: black;
+}
+/*新闻资讯*/
+/*新闻资讯*/
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 650px;
+    background-color: peru;
+}
+
+.newsTitle {
+    margin-left: 50%;
+    padding-top: 20px;
+}
+
+.newsTitle div:nth-child(1) {
+    font-size: 26px;
+    color: rgb(34, 35, 37);
+}
+
+.newsTitle div:nth-child(2) {
+    font-size: 14px;
+    color: rgb(153, 162, 169);
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+.newsTitle div:nth-child(3) {
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+.newsModules{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    width: 1070px;
+    height: 80%;
+    border: 1px solid red;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.newsModules .newsModule{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 5%;
+    height: 90%;
+    margin-left: 2%;
+    background-color: green;
+}
+.newsModule .newsModuleImg img{
+    width: 40%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.newsModule .newsModuleDesc{
+    width: 340px;
+}
+.newsModule .newsModuleDesc h2{
+    display: flex;
+    width: 50px;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.newsModule .newsModuleDesc p{
+    display: block;
+    white-space: normal;
+    width: 85%;
+    height: 120%;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: coral;
+}
