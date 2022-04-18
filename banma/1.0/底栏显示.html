@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  .outbox {
+      width: 100%;
+      height: 220px;
+      background-color: #00b48e;
+  }
+
+  .box-center {
+      box-sizing: content-box;
+      height: 180px;
+      width: 1180px;
+      margin: 0 auto;
+      padding-top: 20px;
+      background-color: #00b48e;
+  }
+
+  .box-center * {
+      box-sizing: inherit;
+  }
+
+  /*右侧*/
+  .box-right {
+      float: right;
+      width: 850px;
+      font-size: 12px;
+      font-family: tahoma, arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "b8bf53", sans-serif;
+      line-height: 1.3em;
+  }
+
+  dl {
+      display: block;
+      margin-block-start: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+  .box-right-navigation dl {
+      float: left;
+      min-width: 141px;
+      white-space: nowrap;
+  }
+
+
+  .box-right-navigation dt {
+      height: 33px;
+      font-size: 16px;
+      color: #FFFFFF;
+  }
+
+  dt {
+      display: block;
+  }
+
+  .box-right-link {
+      margin-bottom: 15px;
+  }
+
+  .box-right-navigation a, .box-right-navigation a:hover, .box-right-navigation a:visited {
+      color: rgba(255, 255, 255, .8);
+      text-decoration: none;
+  }
+
+  .box-footer-more {
+      clear: both;
+  }
+
+  .box-footer-more > a {
+      display: inline-block;
+     /* padding: 0 7px;*/
+     /* border: solid 1px #666;*/
+      border-radius: 3px;
+      line-height: 20px;
+  }
+
+  .box-footer-copyright {
+      margin-top: 26px;
+      color: rgba(255, 255, 255, .4);
+  }
+
+  .box-footer-copyright a, .box-footer-copyright a:hover, .box-footer-copyright a:visited {
+      color: rgba(255, 255, 255, .4);
+      text-decoration: none;
+  }
+
+  /*左侧*/
+  .box-left {
+      float: left;
+      width: 220px;
+      height: 176px;
+      padding-left: 30px;
+      border-right: solid 1px rgba(255, 255, 255, .08);
+  }
+
+  .box-footer-logo {
+      width: 158px;
+      height: 63px;
+      margin-top: 20px;
+  }
+
+  img {
+      border: 0;
+  }
+
+  .box-footer-icons {
+      padding-top: 28px;
+  }
+
+  .box-footer-icons a {
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      margin-right: 28px;
+      border: solid 2px #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+  }
+
+  .box-footer-icons img {
+      width: 26px;
+      height: 26px;
+      border: none;
+      vertical-align: middle;
+  }
+  </style>
+</head>
+<body>
+<div class="outbox">
+  <div class="box-center">
+    <!--左侧-->
+    <div class="box-left">
+
+      <img class="box-footer-logo" src="https://www.ebanma.com/47dad9ba1307ea39b1923e1979cf1216.png">
+      <!--<div class="box-footer-icons">
+        <a href="https://xz.alibaba-inc.com/applist/appList" target="_blank">
+          <img src="//img.alicdn.com/tfs/TB1UpyPeCBYBeNjy0FeXXbnmFXa-104-104.png">
+        </a>
+        <a href="https://alilang.alibaba-inc.com/portal/index.htm" target="_blank">
+          <img src="//img.alicdn.com/tfs/TB1WpyPeCBYBeNjy0FeXXbnmFXa-104-104.png">
+        </a>
+      </div>-->
+    </div>
+
+    <!--右侧-->
+    <div class="box-right">
+      <div class="box-right-navigation">
+        <dl>
+          <dt>协同</dt>
+          <dd>
+            <div class="box-right-link">
+              <a href="https://work.alibaba-inc.com/">阿里内外</a>
+            </div>
+          </dd>
+          <dd>
+            <div class="box-right-link">
+              <a href="https://alimeeting.alibaba-inc.com/">内外会议</a>
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt>IT</dt>
+          <dd>
+            <div class="box-right-link">
+              <a href="javascript:">阿里郎</a>
+            </div>
+          </dd>
+          <dd>
+            <div class="box-right-link">
+              <a href="javascript:">资产平台</a>
+            </div>
+          </dd>
+        </dl>
+        <div class="box-footer-more">
+          <a href="https://work.alibaba-inc.com/work/links" target="_blank"></a>
+        </div>
+      </div>
+      <div class="box-footer-copyright"> Powered by
+        <a target="_blank" href="https://aip.alibaba-inc.com/about.html">阿里巴巴企业智能</a> © 2022 阿里巴巴集团 版权所有
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

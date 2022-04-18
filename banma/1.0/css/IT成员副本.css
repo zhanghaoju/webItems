@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.staff{
+    width: 400px;
+    height: 350px;
+    /*background-color: #4c6078;*/
+    white-space: nowrap;
+    /*overflow-x: scroll;
+    overflow-y: hidden;*/
+    overflow: auto;
+    background-color: #6b7175;
+}
+/*::-webkit-scrollbar {
+    display: none; !* Chrome Safari *!
+}*/
+.staff .title {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #6b7175;
+    font-size: 20px !important;
+    color: rgba(0, 0, 0, .6);
+    line-height: 25px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+.boxOut{
+    position: relative;
+    display: inline-block;
+    width: 190px;
+    height: 330px;
+    padding: 5px;
+}
+img{
+    width: 190px;
+    height: 190px;
+}
+.dingtalk{
+    position: absolute;
+    top: 6px;
+    left: 45px;
+    width: 15px;
+    height: 15px;
+}
+.boxText{
+    position: absolute;
+    top: 200px;
+    width: 180px;
+    height: 100px;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    background-color: #00b48f;
+}
+.boxText a span{
+    display: inline-block;
+    color: #ffffff;
+
+}
+.boxText span{
+    margin-left: 0px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+[dataTitle] {
+    position: relative;
+    margin: 0 20px;
+}
+[dataTitle]:after {
+    content: attr(dataTitle);
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    width: auto;
+    height: 35px;
+    transform: translate(-50%, 0);
+    color:#000000;
+    line-height: 30px;
+    /*text-shadow: 0 -1px 0px black;*/
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all .3s;
+    /*opacity: 1;*/
+    visibility: hidden;
+
+}
+
+[dataTitle]:hover:after {
+    transition-delay: 100ms;
+    visibility: visible;
+    transform: translate(-50%, -6px);
+    opacity: 1;
+}

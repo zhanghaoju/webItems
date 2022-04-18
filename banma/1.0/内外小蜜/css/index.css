@@ -1,0 +1,58 @@
+body {
+    height: 1400px;
+    background-color: #f4f4f4;
+}
+
+.w {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    /*background-color: #f8f9fa;*/
+}
+/*IT小蜜*/
+.itServiceTool {
+    position: sticky;
+    top: 100px;
+    width: 60px;
+    height: 200px;
+   /* background: rgba(0,0,0,0);*/
+    background-color: #1e88e5;
+}
+
+.itServiceMachine {
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    background-color: #fff;
+}
+.itServiceMachine .itServiceMachineTest{
+    width: 58px;
+    height: 65px;
+    /*background-color: #1e88e5;*/
+}
+.itServiceMachine .itServiceMachineTest:hover {
+    background: #00b48f;
+}
+.itServiceMachine .line {
+    width: 45px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+.itServiceMachine .logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.itServiceMachine .logo img {
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+}
+
+.itServiceMachine .title {
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+}

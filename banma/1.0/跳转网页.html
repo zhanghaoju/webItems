@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--<input type="text" name="search_index" id="search_index" onkeydown="entersearch1(event)"  onblur="if(this.value==''){this.value='请搜索...'}" onfocus="if(this.value=='请搜索...'){this.value=''}" value="请搜索..."  />-->
+<input type="text" name="search_index" id="search_index" placeholder="快速搜索" />
+<script src="jsquery.min.js">
+
+</script>
+<script>
+function jump() {
+	var searchVal = $("#search_index").val();
+	window.open('https://yuque.alibaba-inc.com/search?q=' + searchVal + '&type=content&scope=hlddsk%2Fukx4be&tab=book&p=1&target=_blank');
+}
+document.addEventListener('keydown', function(event) {
+	if (event.keyCode == 13) {
+		jump();
+	}
+})
+/*function enterSearch(event){
+ if (event.keyCode == 13)
+ {
+ jump();
+ }
+ }*/
+</script>
+</body>
+</html>

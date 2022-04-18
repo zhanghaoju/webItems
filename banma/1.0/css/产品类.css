@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.recom {
+    position: relative;
+    width: 400px;
+    height: 269px;
+    /* padding: 20px 0 2px 24px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+/*.recom:hover{
+    overflow: hidden;
+}*/
+
+.recom .title {
+    height: 25px;
+    font-size: 20px !important;
+    color: rgba(0, 0, 0, .8);
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.recom .recomList {
+    /*width: 360px;*/
+    width: 400px;
+    height: 198px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    /*margin-top: 10px;*/
+    margin-left: 20px;
+    overflow: auto;
+}
+/*::-webkit-scrollbar {
+    display: none; !* Chrome Safari *!
+}*/
+
+.recom .recomList .item {
+    /*margin-bottom: 10px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 66px;
+    margin-bottom: 18px;
+    margin-left: -5px;
+}
+
+.recom .recomList .item .flx-noImg, .recom .recomList .item .imgWarp {
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    border-radius: 30%
+}
+
+.recom .recomList .item .flx-noImg {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    background: #ff6f00;
+    align-items: center;
+    justify-content: center
+}
+
+.recom .recomList .item .flx-noImg a span {
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;;
+    font-size: 16px;
+    color: #fff
+}
+
+.recom .recomList .item .name {
+    height: 18px;
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    max-width: 60px;
+    margin-top: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.recom .recomList .item:hover {
+    text-decoration: none
+}
+
+.recom .recomList .item:hover .name {
+    color: #ff6a00
+}
+
+.item {
+    /*margin-bottom: 10px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    width: 60px;
+    height: 66px;
+    margin-bottom: 18px
+}
+
+.item .flx-noImg, .item .imgWarp {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%
+}
+.item .flx-noImg, .item  .imgOne{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /*background-color: #0079ef;*/
+    background-color: #ffffff;
+    line-height: 40px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.item .flx-noImg {
+    display: flex;
+    background: #ff6f00;
+    align-items: center;
+    justify-content: center
+}
+
+.item .flx-noImg span {
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;;
+    font-size: 16px;
+    color: #fff
+}
+
+.item .name {
+    /* overflow: hidden;*/
+}
+
+.item:hover {
+    text-decoration: none
+}
+
+.item:hover .name {
+    color: #ff6a00
+}
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #ff6400
+}
+
+/*文字预览*/
+[dataTitle] {
+    position: relative;
+    margin: 0 20px;
+
+}
+
+[dataTitle]:after {
+    content: attr(dataTitle);
+    position: absolute;
+    left: 30px;
+    top: 70px !important;
+    width: auto;
+   /* height: 35px;*/
+    transform: translate(-50%, 0);
+    color:#000000;
+    line-height: 30px;
+    /*text-shadow: 0 -1px 0px black;*/
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all .3s;
+    /*opacity: 1;*/
+    visibility: hidden;
+    z-index: 11;
+
+}
+
+[dataTitle]:hover:after {
+    transition-delay: 100ms;
+    visibility: visible;
+    transform: translate(-50%, -6px);
+    opacity: 1;
+}

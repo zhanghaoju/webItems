@@ -1,0 +1,115 @@
+
+.boxContent{
+    width: 880px;
+    height: 200px;
+    /*background-color: #91d5ff;*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.applySoft{
+    position: relative;
+    width: 880px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #fff;
+    background-color: #f2f2f2;
+}
+.applySoft span {
+    color: #fff;
+}
+.applySoft a{
+    position: absolute;
+    left: 90px;
+    top: 4px;
+    text-decoration: none;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+}
+.applySoft a img{
+    position: absolute;
+    left: -14px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    line-height: 17px;
+}
+.outerBox {
+    position: relative;
+    top: -6px;
+    width: 800px;
+    height: 160px;
+    background-color: #4c6078;
+}
+
+#sidebarBox {
+    height: 160px;
+    width: 140px;
+   /* border-radius: 10px;*/
+    background-color: #00b48f;
+}
+li{
+    list-style: none;
+}
+ul > li {
+    height: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+ul > li > a {
+    display: block;
+    height: 25px;
+    width: 135px;
+    border-radius: 5px;
+    padding-left: 5px;
+    color:#2C2F33;
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+
+ul > li > a > span {
+    float: right;
+    padding-right: 12px;
+}
+
+ul > li > a:hover {
+    background-color: #fff;
+}
+
+.hideBox {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    display: none;
+    width: 400px;
+    height: 160px;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    background-color: #ffffff;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+.hide {
+    display: none;
+}
+.apply{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #e4f1fd;
+}
+.labelSoft{
+    font-size: 13px;
+    color: #6b7175;
+}

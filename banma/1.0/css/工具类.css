@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+.recomTool {
+    position: relative;
+    width: 400px;
+    height: 269px;
+    /* padding: 20px 0 2px 24px; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/*.recom:hover{
+    overflow: hidden;
+}*/
+
+.recomTool .titleTool {
+    height: 25px;
+    font-size: 20px !important;
+    color: rgba(0, 0, 0, .8);
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.recomTool .recomListTool {
+    /*width: 360px;*/
+    width: 400px;
+    height: 198px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    /*margin-top: 10px;*/
+    margin-left: 20px;
+    overflow: auto;
+}
+/*::-webkit-scrollbar {
+    display: none; !* Chrome Safari *!
+}*/
+
+.recomTool .recomListTool .itemTool {
+    /*margin-bottom: 10px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 66px;
+    margin-bottom: 18px;
+    margin-left: -5px;
+}
+
+.recomTool .recomListTool .itemTool .flx-noImgTool, .recomTool .recomListTool .itemTool .imgWarpTool {
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    border-radius: 30%
+}
+
+.recomTool .recomListTool .itemTool .flx-noImgTool {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    background: #ff6f00;
+    align-items: center;
+    justify-content: center
+}
+
+.recomTool .recomListTool .itemTool .flx-noImgTool a span {
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;;
+    font-size: 16px;
+    color: #fff
+}
+
+.recomTool .recomListTool .itemTool .nameTool {
+    height: 18px;
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    max-width: 60px;
+    margin-top: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.recomTool .recomListTool .itemTool:hover {
+    text-decoration: none
+}
+
+.recomTool .recomListTool .itemTool:hover .nameTool {
+    color: #ff6a00
+}
+
+.itemTool {
+    /*margin-bottom: 10px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    width: 60px;
+    height: 66px;
+    margin-bottom: 18px
+}
+
+/*.itemTool .flx-noImgTool, .itemTool .imgWarpTool {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%
+}*/
+.itemTool .flx-noImgTool, .itemTool  .imgOneTool{
+    width: 43px;
+    height: 43px;
+    background-color: #ffffff;
+    line-height: 45px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.itemTool .flx-noImgTool {
+    display: flex;
+    background: #ff6f00;
+    align-items: center;
+    justify-content: center
+}
+
+.itemTool .flx-noImgTool span {
+    font-family: Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;;
+    font-size: 16px;
+    color: #fff
+}
+
+.itemTool .nameTool {
+    /* overflow: hidden;*/
+
+}
+
+.itemTool:hover {
+    text-decoration: none
+}
+
+.itemTool:hover .nameTool {
+    color: #ff6a00
+}
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #ff6400
+}
+
+/*文字预览*/
+[dataTitle] {
+    position: relative;
+    margin: 0 20px;
+
+}
+
+[dataTitle]:after {
+    content: attr(dataTitle);
+    position: absolute;
+    left: 30px;
+    top: 70px !important;
+    width: auto;
+   /* height: 35px;*/
+    transform: translate(-50%, 0);
+    color:#000000;
+    line-height: 30px;
+    /*text-shadow: 0 -1px 0px black;*/
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all .3s;
+    /*opacity: 1;*/
+    visibility: hidden;
+    z-index: 11;
+
+}
+
+[dataTitle]:hover:after {
+    transition-delay: 100ms;
+    visibility: visible;
+    transform: translate(-50%, -6px);
+    opacity: 1;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  #content {
+      width: 380px;
+      height: 198px;
+      background-color: #f6f7f9;
+      white-space: nowrap;
+      overflow: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+  .fonts {
+      height: 25px;
+      font-size: 20px !important;
+      color: rgba(0, 0, 0, .8);
+      line-height: 25px;
+      margin-bottom: 10px;
+      padding-top: 7px;
+      padding-left: 7px;
+  }
+
+  .box-link {
+      letter-spacing: 0;
+      height: 36px;
+      line-height: 24px;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      margin-bottom: -4px;
+  }
+
+  .box-link a {
+      padding-top: 10px;
+      padding-left: 10px;
+      color: #000000;
+      font-size: 14px;
+      text-decoration: none;
+      font-family: Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  }
+
+  .box-link a:hover {
+      color: #0079ef;
+  }
+
+  .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: rgba(0, 0, 0, .2);
+      border-radius: 50%;
+      margin-bottom: 6px;
+      margin-right: 9px;
+  }
+
+  #text {
+      display: inline-block;
+      height: 18px;
+      max-width: 220px;
+      font-family: PingFangSC-Regular, Microsoft YaHei;
+      font-size: 14px;
+      color: #666;
+      letter-spacing: 0;
+      line-height: 18px;
+      list-style-type: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+  }
+
+ /* [dataTitle] {
+      position: relative;
+      margin: 0 20px;
+  }
+
+  [dataTitle]:after {
+      content: attr(dataTitle);
+      position: absolute;
+      left: 90px;
+      top: 38px;
+      width: auto;
+      height: 35px;
+      transform: translate(-50%, 0);
+      color: #000000;
+      line-height: 30px;
+      !*text-shadow: 0 -1px 0px black;*!
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+      background: #FFFFFF;
+      border-radius: 5px;
+      padding: 3px 10px;
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: all .3s;
+      !*opacity: 1;*!
+      visibility: hidden;
+      z-index: 11;
+
+  }
+
+  [dataTitle]:hover:after {
+      transition-delay: 100ms;
+      visibility: visible;
+      transform: translate(-50%, -6px);
+      opacity: 1;
+  }*/
+
+  #searchInput {
+      position: relative;
+  }
+
+  #searchInput #search-input {
+      position: relative;
+      margin: 0 auto;
+      width: 300px;
+      height: 36px;
+      border: none;
+      background: rgba(31, 56, 88, .06);
+      border-radius: 21px;
+      padding-left: 12px;
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #000;
+      letter-spacing: 0;
+      line-height: 18px;
+  }
+
+  #searchInput #search-icon {
+      position: absolute;
+      display: inline-block;
+      top: -7px;
+      left: 270px;
+      height: 36px;
+      width: 36px;
+  }
+
+  #searchInput #search-icon img {
+      transform: scale(.5);
+  }
+  </style>
+</head>
+<body>
+<div id="content">
+  <div class="box-content">
+    <div class="fonts">新闻早知道</div>
+  </div>
+  <div class="slider-bar">
+    <hr />
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道新闻早知道新闻早知道新闻早知道新闻早知道新闻早知道新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+    <div class="box-link" style="margin-left: 3px" title="新闻早知道" dataTitle>
+      <a href="https://yuque.antfin-inc.com/docs/share/a39aa941-ea1c-46dc-b52d-616ab39ea8e1?#" target="_blank">
+        <span class="dot"></span>
+        <li id="text">新闻早知道</li>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="searchInput" style="margin-top: 60px">
+  <input type="text" placeholder="请输入你要查找的问题" id="search-input" value="">
+  <div id="search-icon">
+    <img src="https://img.alicdn.com/tfs/TB1uJBhSeL2gK0jSZFmXXc7iXXa-48-48.png" alt="搜索">
+  </div>
+  <div id="list"></div>
+</div>
+
+<script>
+// 内容
+let main = document.getElementById('content');
+let searchInput = document.getElementById('searchInput')
+let content = main.innerHTML;
+let btn = document.getElementById('search-icon');
+let prompt = document.getElementById('list');
+
+document.addEventListener('keydown', function() {
+	const timer = setTimeout(function() {
+		clearTimeout(timer);
+		//获取输入的字符
+		let word = document.getElementById('search-input').value;
+		//创建正则表达式，设置g全局匹配
+		let pattern = new RegExp(word, 'g');
+		console.log("拼接" + pattern)
+		console.log("内容长度" + word.length)
+		console.log("输入的内容" + content)
+		let count = content.match(pattern);  //match方法获取匹配个数
+    /*console.log("测试：" + content.indexOf(word));*/
+		if (word.trim() === "") {
+			prompt.style.display = 'none';
+			return;
+		}
+		if (content.indexOf(word) === -1) {
+			prompt.innerHTML = '<div style="color: red"></div>'
+		} else {
+			//通过replace+正则表达式方法，替换旧文本
+			main.innerHTML = content.replace(pattern, "<span style='background: yellow;color: red'>" + word + "</span>");
+      /*	prompt.innerHTML = '匹配到' + count + '个' + '"' + word + '"';*/
+		}
+	}, 2000);
+})
+</script>
+</script>
+</body>
+</html>

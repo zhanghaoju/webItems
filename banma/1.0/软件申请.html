@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css件申请.css">
+</head>
+<body>
+<div class="boxContent">
+  <div class="applySoft">
+    申请软件
+    <span>|</span>
+    <a href="javascript:;">
+      钉钉入口
+
+      <img src="https://tianshu.alicdn.com/5f53fcd9-88b7-4e70-bbbf-c2f7c415b528.png" alt="">
+    </a>
+  </div>
+  <div class="outerBox">
+    <!--侧边栏-->
+    <div id="sidebarBox">
+      <ul class="nav">
+        <!--自定义标签-->
+        <li>
+          <a href="#">
+            办公必备
+            <span>&gt;</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">图像视频
+            <span>&gt;</span></a>
+        </li>
+        <li>
+          <a href="#">编程开发
+            <span>&gt;</span></a>
+        </li>
+        <li>
+          <a href="#">其他软件
+            <span>&gt;</span></a>
+        </li>
+      </ul>
+    </div>
+    <!--需要隐藏的盒子-->
+    <div class="hideBox" style="display: block;">
+      <div class="boxCon hide" style="display:block">
+        <div>
+          <h3>办公必备：</h3>
+          <!--<div>软件名称:</div>-->
+          <div class="collectSoft">
+            <div class="labelSoft">软件名称：Microsoft Project</div>
+            <div class="labelSoft">软件名称：Microsoft Visio</div>
+            <div class="labelSoft">软件名称：Visual assist</div>
+            <div class="labelSoft">软件名称：Xmind ZEN（Mac）</div>
+            <div class="labelSoft">软件名称：Xmind8 Pro（fro mac）</div>
+            <div class="labelSoft">软件名称：Xmind8 Pro（Windows）</div>
+            <div class="labelSoft">软件名称：Xshell 6(Includes 1 year maintenance)</div>
+            <div class="labelSoft">软件名称：Xftpl 6(Includes 1 year maintenance)</div>
+            <div class="labelSoft">软件名称：Axure RP Pro</div>
+            <div class="labelSoft">软件名称：Winrar</div>
+            <div class="labelSoft">软件名称：Tableau Creator</div>
+          </div>
+        </div>
+      </div>
+      <div class="boxCon hide">
+        <div>
+          <h3>图像视频：</h3>
+          <!--<div>软件名称:</div>-->
+          <div class="collectSoft">
+            <div class="labelSoft">软件名称：Adobe AI</div>
+            <div class="labelSoft">软件名称：Adobe AU</div>
+            <div class="labelSoft">软件名称：Adobe PS</div>
+            <div class="labelSoft">软件名称：福昕PDF编辑器（企业版）</div>
+            <div class="labelSoft">软件名称：Adobe系列包</div>
+            <div class="labelSoft">软件名称：sketch</div>
+          </div>
+        </div>
+      </div>
+      <div class="boxCon hide">
+       <!-- <span class="apply"><a href="">申请</a></span>-->
+        <h3>编程开发：</h3>
+        <div class="collectSoft">
+          <div class="labelSoft">软件名称：VMware Workstation Pro</div>
+          <div class="labelSoft">软件名称：Navicat Premium</div>
+          <div class="labelSoft">软件名称：Navicat for mysql</div>
+          <div class="labelSoft">软件名称：beyond compare standard Edition</div>
+          <div class="labelSoft">软件名称：Beyond Compare 4 Pro Edition</div>
+          <div class="labelSoft">软件名称：visual studio</div>
+          <div class="labelSoft">软件名称：sublime text</div>
+          <div class="labelSoft">软件名称：ultraedit</div>
+          <div class="labelSoft">软件名称：JEB Android</div>
+          <div class="labelSoft">软件名称：DevPartner for Visual C++ BoundsChecker Suite 11.3（Name User 版本）</div>
+        </div>
+      </div>
+      <div class="boxCon hide">
+        <h3>其他软件：</h3>
+        <div class="collectSoft">
+          <div class="labelSoft">软件名称：OmniGraffle</div>
+          <div class="labelSoft">软件名称：OmniPlan</div>
+          <div class="labelSoft">软件名称：Principle</div>
+          <div class="labelSoft">软件名称：astah-professional</div>
+          <div class="labelSoft">软件名称：secureCRT</div>
+          <div class="labelSoft">软件名称：Source Insight New License</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+// 获取左边侧边栏元素
+let hideBox = document.querySelector('.hideBox');
+let outerBox = document.querySelector('.outerBox')
+let nav = document.querySelector('.nav');
+let lis = nav.children; // 得到ul下的所有li参数
+// 遍历
+for (let i = 0; i < lis.length; i++) {
+	lis[i].onmouseover = function() {
+		console.log(hideBox.children[i])
+		outerBox.style.display = 'block'
+		hideBox.children[i].style.display = 'block'
+	}
+	lis[i].onmouseout = function() {
+		outerBox.style.display = 'block'
+		hideBox.children[i].style.display = 'none'
+	}
+}
+</script>
+</body>
+</html>

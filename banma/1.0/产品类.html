@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/产品类.css">
+</head>
+<body>
+<div class="container recom scroll">
+  <div class="title">产品类</div>
+  <hr width="380px" />
+  <div class="recomList">
+    <div class="item" style="margin-right: 25px;" title="阿里语雀" dataTitle>
+      <a href="https://yuque.alibaba-inc.com/lark/open" target="_blank">
+        <img src="https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*CUIoT4xopNYAAAAAAAAAAABkARQnAQ" alt="" class="imgOne">
+        <p class="name">阿里语雀</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="云邮箱" dataTitle>
+      <a href="https://yuque.alibaba-inc.com/easywork/wvffwp" target="_blank"><img src="https://img.alicdn.com/tfs/TB1JTHwdggP7K4jSZFqXXamhVXa-40-40.png" alt="" class="imgOne">
+        <p class="name">云邮箱</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="TeamApp" dataTitle>
+      <a href="https://yuque.alibaba-inc.com/docs/share/de3b5ca4-429e-437c-b70c-2562e137bf07?spm=a1z2e.8101737.0.0.67fc4f9bZ4TDjR" target="_blank"><img src="https://tianshu.alicdn.com/b469c9df-76b4-4e54-8c10-0b142df9c439.png" alt="" class="imgOne">
+        <p class="name">TeamApp</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="阿里郎" dataTitle>
+      <a href="https://alilang.alibaba-inc.com/portal/index.htm" target="_blank"><img src="https://img.alicdn.com/tfs/TB1aAlqfTM11u4jSZPxXXahcXXa-100-100.png" alt="" class="imgOne">
+        <p class="name">阿里郎</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="云壳" dataTitle>
+      <a href="https://s.alibaba-inc.com/index?spm=a1z3l6.13082036.0.0.655314f7rb3HvF#/product/40" target="_blank"><img src="https://img.alicdn.com/tfs/TB1q082aEGF3KVjSZFoXXbmpFXa-36-39.png" alt="" class="imgOne">
+        <p class="name">云壳</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="TeamFile" dataTitle>
+      <a href="https://yuque.alibaba-inc.com/hlddsk/wegid6/getq53" target="_blank"><img src="https://file.alibaba-inc.com/media/img/alifile.ico" alt="" class="imgOne">
+        <p class="name">TeamFile</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="阿里会议" dataTitle>
+      <a href="https://alimeeting.alibaba-inc.com/alimeeting/web/welcome" target="_blank">
+        <img src="https://tianshu.alicdn.com/e6bcd2fe-7e1e-4f31-b4e3-0bf32bcda610.png" alt="" class="imgOne">
+        <p class="name">阿里会议</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="资产系统AAP" dataTitle>
+      <a href="https://aap.alibaba-inc.com/#/" target="_blank">
+        <img src="https://tianshu.alicdn.com/930a2126-272d-49cd-8209-759b759eee81.png" alt="" class="imgOne">
+        <p class="name">资产系统AAP</p>
+      </a>
+    </div>
+    <div class="item" style="margin-right: 25px;" title="钉钉" dataTitle>
+      <a href="https://www.dingtalk.com/#a1" target="_blank"><img src="https://tianshu.alicdn.com/5f53fcd9-88b7-4e70-bbbf-c2f7c415b528.png" alt="" class="imgOne">
+        <p class="name">钉钉</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+function dataTitle() {
+	var dataTitle = document.querySelectorAll("[dataTitle]");
+	for (var i = 0; i < dataTitle.length; i++) {
+		dataTitle[i].setAttribute("dataTitle", dataTitle[i].getAttribute("title"));
+		dataTitle[i].removeAttribute("title");
+	}
+}
+dataTitle();
+</script>
+</body>
+</html>

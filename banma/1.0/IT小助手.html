@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/工具类.css">
+</head>
+<body>
+<div class="containerTool recomTool scrollTool">
+  <div class="titleTool">IT小助手</div>
+  <hr width="380px" />
+  <div class="recomListTool">
+    <!--<div class="itemTool" style="margin-right: 25px;" title="阿里郎加白" dataTitle>
+      <a href="https://alilang.alibaba-inc.com/portal/whiteNetApply.htm?spm=a1z32v.12126622.0.0.a65d4aa0xJkwlu" target="_blank">
+        <div class="flx-noImgTool">
+          <div>
+            <span>加白</span>
+          </div>
+        </div>
+        <p class="nameTool">阿里郎加白</p>
+      </a>
+    </div>-->
+    <div class="itemTool" style="margin-right: 25px;" title="阿里郎加白" dataTitle>
+      <a href="https://alilang.alibaba-inc.com/portal/whiteNetApply.htm?spm=a1z32v.12126622.0.0.a65d4aa0xJkwlu" target="_blank">
+        <img src="https://tianshu.alicdn.com/1d95e99e-71b5-47e2-bd36-ab053807e48a.png" alt="" class="imgOneTool">
+        <p class="nameTool">阿里郎加白</p>
+      </a>
+    </div>
+    <div class="itemTool" style="margin-right: 25px;" title="非阿里设备加白" dataTitle>
+      <a href="https://alilang.alibaba-inc.com/portal/white.htm?spm=a1z32v.12126622.0.0.a65d4aa0xJkwlu" target="_blank">
+        <div class="flx-noImgTool">
+          <div>
+            <span>加白</span>
+          </div>
+        </div>
+        <p class="nameTool">非阿里设备加白</p>
+      </a>
+    </div>
+    <div class="itemTool" style="margin-right: 25px;" title="私搭wifi申请" dataTitle>
+      <a href="https://bpms.alibaba-inc.com/workdesk/instStartLegao?__id=inist_start&processCode=PROC-2N566L91-HV0QKZ3HI6RLFL3WDE6Y1-CWESBDVH-0" target="_blank">
+        <div class="flx-noImgTool">
+          <div>
+            <span>wifi</span>
+          </div>
+        </div>
+        <p class="nameTool">私搭wifi申请</p>
+      </a>
+    </div>
+    <div class="itemTool" style="margin-right: 25px;" title="会议室预定" dataTitle>
+      <a href="https://meeting.alibaba-inc.com/alimeeting/web#/" target="_blank">
+        <div class="flx-noImgTool">
+          <div>
+            <span>预定</span>
+          </div>
+        </div>
+        <p class="nameTool">会议室预定</p>
+      </a>
+    </div>
+    <div class="itemTool" style="margin-right: 25px;" title="云壳卸载申请（正式员工）" dataTitle>
+      <a href="https://bpms.alibaba-inc.com/workdesk/instStartLegao?spm=a1z32v.11892603.0.0.6b365910bn4aL6&__id=inist_start&processCode=PROC-RLYJCSHV-WRNRF8M9TIQHACR49T8T1-1PLJP8CJ-1" target="_blank">
+        <div class="flx-noImgTool">
+          <div>
+            <span>卸载</span>
+          </div>
+        </div>
+        <p class="nameTool">云壳卸载申请（正式员工）</p>
+      </a>
+    </div>
+    <div class="itemTool" style="margin-right: 25px;" title="流程" dataTitle>
+      <a href="" target="_blank">
+        <div class="flx-noImgTool">
+          <div>
+            <span>流程</span>
+          </div>
+        </div>
+        <p class="nameTool">流程</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function dataTitle() {
+	var dataTitle = document.querySelectorAll("[dataTitle]");
+	for (var i = 0; i < dataTitle.length; i++) {
+		dataTitle[i].setAttribute("dataTitle", dataTitle[i].getAttribute("title"));
+		dataTitle[i].removeAttribute("title");
+	}
+}
+dataTitle();
+</script>
+</body>
+</html>
