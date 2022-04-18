@@ -161,12 +161,16 @@ section {
     white-space: nowrap;
     overflow-x: auto;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 .newsModules .newsModule{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     position: relative;
-    left: 5%;
+    left: 2%;
+    width: 95%;
     height: 90%;
     margin-left: 2%;
     background-color: green;
