@@ -8,9 +8,11 @@ html, body {
     height: 3000px;
     background-color: #f8f9fa;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 body {
     display: flex;
     align-items: center;
@@ -25,9 +27,11 @@ section {
     display: flex;
     position: relative;
 }
-.banner{
+
+.banner {
     display: flex;
 }
+
 .banner img {
     display: flex;
     align-items: flex-start;
@@ -92,10 +96,12 @@ section {
     position: absolute;
     margin-right: 100px;
 }
-.Grid-cell p{
+
+.Grid-cell p {
     color: #a9afb5;
 }
-.Grid-cell:nth-child(2){
+
+.Grid-cell:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +113,8 @@ section {
     border-radius: 5px;
     background-color: green;
 }
-.Grid-cell:nth-child(2) a{
+
+.Grid-cell:nth-child(2) a {
     display: block;
     width: 100%;
     height: 100%;
@@ -115,13 +122,15 @@ section {
     text-align: center;
     line-height: 40px;
 }
-.Grid-cell:nth-child(2) a:hover{
+
+.Grid-cell:nth-child(2) a:hover {
     color: black;
 }
-/*新闻资讯*/
+
 /*新闻资讯*/
 .news {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     height: 650px;
@@ -129,29 +138,39 @@ section {
 }
 
 .newsTitle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-left: 50%;
-    padding-top: 20px;
+    padding-top: 1%;
 }
 
 .newsTitle div:nth-child(1) {
-    font-size: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
     color: rgb(34, 35, 37);
 }
 
 .newsTitle div:nth-child(2) {
-    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
     color: rgb(153, 162, 169);
-    line-height: 30px;
-    padding-left: 30px;
+    line-height: 2rem;
+    padding-left: 25%;
 }
 
 .newsTitle div:nth-child(3) {
-    width: 40px;
-    margin-left: 30px;
-    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 10%;
     border-bottom: 1px solid rgb(6, 178, 182);
 }
-.newsModules{
+
+.newsModules {
     display: flex;
     flex-wrap: nowrap;
     flex-shrink: 0;
@@ -161,10 +180,12 @@ section {
     white-space: nowrap;
     overflow-x: auto;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
-.newsModules .newsModule{
+
+.newsModules .newsModule {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -175,23 +196,27 @@ section {
     margin-left: 2%;
     background-color: green;
 }
-.newsModule .newsModuleImg img{
+
+.newsModule .newsModuleImg img {
     width: 40%;
     height: 80%;
     margin-left: 10%;
     margin-top: 10%;
 }
-.newsModule .newsModuleDesc{
+
+.newsModule .newsModuleDesc {
     width: 340px;
 }
-.newsModule .newsModuleDesc h2{
+
+.newsModule .newsModuleDesc h2 {
     display: flex;
     width: 50px;
     height: 30px;
     margin-left: 10%;
     margin-top: 10%;
 }
-.newsModule .newsModuleDesc p{
+
+.newsModule .newsModuleDesc p {
     display: block;
     white-space: normal;
     width: 85%;
@@ -199,4 +224,214 @@ section {
     margin-left: 10%;
     margin-top: 5%;
     background-color: coral;
+}
+
+/*产品中心*/
+.productCenter {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 740px;
+    padding-bottom: 5%;
+    background-color: darkkhaki;
+}
+
+.productTitle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 50%;
+    padding-top: 1%;
+}
+
+.productTitle div:nth-child(1) {
+    font-size: 1.6rem;
+    color: rgb(34, 35, 37);
+}
+
+.productTitle div:nth-child(2) {
+    font-size: 1rem;
+    color: rgb(153, 162, 169);
+    line-height: 2rem;
+    padding-left: 5%;
+}
+
+.productTitle div:nth-child(3) {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+
+/*产品图标列表*/
+.productList {
+    position: absolute;
+    top: 12%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+/*::-webkit-scrollbar {
+    display: none; !* Chrome Safari *!
+}*/
+
+.productList .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
+}
+
+.productList .item a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+
+}
+
+.productList .item a img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.productList .item a .name {
+    display: flex;
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+/*产品列表篇*/
+
+.productLists {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    margin-left: -5%;
+    overflow: auto;
+}
+
+.productLists .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+}
+
+.productLists .item a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
+
+.productLists .item a img {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.productContentDesc {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productContentDesc p:nth-child(1) {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.productContentDesc p:nth-child(2) {
+    display: flex;
+    font-size: 1rem;
+}
+
+/*IT小助手*/
+.itHelper {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: #ffffff;
+}
+
+.itHelperTitle {
+    margin-left: 50%;
+    padding-top: 1%;
+}
+
+.itHelperTitle div:nth-child(1) {
+    font-size: 1.6rem;
+    color: rgb(34, 35, 37);
+}
+
+.itHelperTitle div:nth-child(2) {
+    font-size: 1.2rem;
+    color: rgb(153, 162, 169);
+    line-height: 2rem;
+    padding-left: 1%;
+}
+
+.itHelperTitle div:nth-child(3) {
+    width: 8%;
+    margin-left: 4%;
+    margin-top: 2%;
+    border-bottom: 1px solid rgb(6, 178, 182);
+}
+
+/*IT小助手模块列表*/
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itHelperModules {
+    display: flex;
+    margin-left: 2%;
+    margin-top: -25%;
+    position: relative;
+    top: 80%;
+}
+
+.itHelperModules .itHelperModule {
+    position: relative;
+    display: flex;
+    width: 32%;
+    height: 35%;
+    margin-left: 2%;
+    background-color: darkkhaki;
+}
+
+.itHelperModules .itHelperModule a > p {
+    position: absolute;
+    left: 9%;
+    top: 5%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.4rem;
+}
+
+.itHelperModules .itHelperModule a > img {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    margin-left: 180%;
+    margin-top: 37%;
 }
