@@ -7,3 +7,4 @@ $(function(){
 		$(this).addClass('animated pulse').siblings('.itHelperModule').removeClass('pulse');
 	})
 });
+

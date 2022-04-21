@@ -14,10 +14,11 @@
       <img src="./image/cat.png" alt="">
     </div>
     <!--查询-->
-    <div class="searchInput" class="searchInput w" style="margin-top: 60px">
+    <div class="searchInput" id="searchInput" style="margin-top: 60px">
       <input type="text" placeholder="请输入你要查找的问题" id="search-input" value="">
-      <div class="searchBtn">搜索</div>
+      <button class="searchBtn" id="search">搜索</button>
     </div>
+    <div id="list"></div>
   </section>
   <!--中间文字说明-->
   <section>
@@ -50,7 +51,7 @@
           </div>
           <div class="newsModuleDesc">
             <h2>标题</h2>
-            <p class="describe">描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描
+            <p class="describe" id="desc">描述信息描述信息描述信息描述信息描述信息描述信息描述信息描述信息描
               述信息描述信息</p>
 
           </div>
@@ -133,7 +134,7 @@
       <div class="item" title="阿里语雀" dataTitle>
         <a href="https://yuque.alibaba-inc.com/lark/open" target="_blank">
           <img src="https://gw.alipayobjects.com/mdn/prod_resou/afts/img/A*CUIoT4xopNYAAAAAAAAAAABkARQnAQ" alt="" class="img">
-          <p class="name">阿里语雀</p>
+          <p class="name" id="product_name">阿里语雀</p>
         </a>
       </div>
       <div class="item" title="阿里语雀" dataTitle>
@@ -303,5 +304,6 @@
 </main>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/index.js"></script>
+<script src="./js/search.js"></script>
 </body>
 </html>
