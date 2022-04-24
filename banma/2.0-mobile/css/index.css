@@ -23,7 +23,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(top, #222, #333);
 }
-
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 section {
     display: flex;
     position: relative;
@@ -452,9 +456,7 @@ article {
 .itHelperModules .itHelperModule:nth-child(3) {
     background-color: #dbf5ec;
 }
-.itHelperModules .itHelperModule a{
-    width: 100%;
-}
+
 .itHelperModules .itHelperModule a > p {
     position: absolute;
     left: 9%;
