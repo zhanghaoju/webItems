@@ -1,0 +1,37 @@
+.ranking-offcial {
+  padding: 0 0.48rem; }
+  .ranking-offcial .offcial-tit {
+    padding: 1.26rem 0 0.4rem 0;
+    font-size: 0.52rem; }
+  .ranking-offcial .offcial-content .offcial-item {
+    display: flex; }
+    .ranking-offcial .offcial-content .offcial-item .item-icon {
+      width: 3.63rem;
+      height: 3.63rem;
+      position: relative; }
+      .ranking-offcial .offcial-content .offcial-item .item-icon img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.12rem;
+        overflow: hidden;
+        background-color: yellowgreen; }
+      .ranking-offcial .offcial-content .offcial-item .item-icon .item-icon-sub-tit {
+        color: #fff;
+        font-size: 0.36rem;
+        position: absolute;
+        bottom: 0.25rem;
+        left: 0.18rem; }
+    .ranking-offcial .offcial-content .offcial-item .item-top-list {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-left: 0.46rem; }
+      .ranking-offcial .offcial-content .offcial-item .item-top-list .top-list-item {
+        color: #666;
+        font-size: 0.42rem; }
+    .ranking-offcial .offcial-content .offcial-item:nth-of-type(n + 2) {
+      margin-top: 0.3rem; }
+
+/*# sourceMappingURL=index.css.map */

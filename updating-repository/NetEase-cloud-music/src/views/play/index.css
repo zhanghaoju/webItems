@@ -1,0 +1,103 @@
+.play-music {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .play-music-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-color: #161824;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transform: scale(1.25);
+    transform-origin: center;
+    filter: blur(30px) contrast(50%); }
+  .play-music .play-music-container {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .play-music .play-music-container .disc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+      position: relative; }
+      .play-music .play-music-container .disc .disc-needle {
+        width: 3rem;
+        height: 4.8rem;
+        background-image: url("../../assets/images/play/needle-plus.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 0.325rem;
+        z-index: 5;
+        transform: translateX(40%) rotateZ(-35deg);
+        transform-origin: 0.5rem 0;
+        transition: transform 1s; }
+        .play-music .play-music-container .disc .disc-needle.active {
+          transform: translateX(40%); }
+        .play-music .play-music-container .disc .disc-needle::before {
+          content: "";
+          width: 0.65rem;
+          height: 0.65rem;
+          position: absolute;
+          top: -0.325rem;
+          left: 0.13rem;
+          border-radius: 50%;
+          background-color: #fff;
+          box-shadow: 0px 0px 0px 0.12rem rgba(0, 0, 0, 0.2); }
+      .play-music .play-music-container .disc .disc-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10.23rem;
+        height: 10.23rem;
+        background: url("../../assets/images/play/disc-plus.png");
+        background-size: contain;
+        animation: rotating 20s infinite linear forwards paused; }
+        .play-music .play-music-container .disc .disc-bg.active {
+          animation-play-state: running; }
+        .play-music .play-music-container .disc .disc-bg .song-cover {
+          width: 6.38rem;
+          height: 6.38rem;
+          background-size: contain;
+          border-radius: 50%; }
+    .play-music .play-music-container .progress {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: #f7f7f7;
+      font-size: 0.35rem; }
+      .play-music .play-music-container .progress-bar {
+        width: 9.54rem;
+        height: 0.06rem;
+        background-color: #f7f7f7;
+        border-radius: 0.2rem; }
+        .play-music .play-music-container .progress-bar .active {
+          width: 0.24rem;
+          height: 0.24rem;
+          transform: translateY(-0.1rem);
+          background-color: #fff;
+          border-radius: 50%;
+          position: relative; }
+    .play-music .play-music-container .actions {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      color: #fff; }
+      .play-music .play-music-container .actions .play-btn {
+        font-size: 1.8rem; }
+      .play-music .play-music-container .actions .prev-btn,
+      .play-music .play-music-container .actions .next-btn {
+        font-size: 0.62rem; }
+
+@keyframes rotating {
+  100% {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=index.css.map */

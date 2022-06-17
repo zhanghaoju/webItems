@@ -1,0 +1,24 @@
+.core-container {
+  height: 100%;
+  flex: 1; }
+  .core-container .scroll-wrapper {
+    height: 100%;
+    overflow: hidden; }
+    .core-container .scroll-wrapper .pulldown-scroller {
+      position: relative; }
+      .core-container .scroll-wrapper .pulldown-scroller .pulldown-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; }
+      .core-container .scroll-wrapper .pulldown-scroller .pulldown-before-loading {
+        font-size: 0.9rem; }
+        .core-container .scroll-wrapper .pulldown-scroller .pulldown-before-loading.active-laoding {
+          animation: loading 1s infinite; }
+
+@keyframes loading {
+  100% {
+    transform: rotateZ(360deg); } }
+
+/*# sourceMappingURL=index.css.map */

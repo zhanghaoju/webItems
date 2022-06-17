@@ -1,0 +1,31 @@
+$bannerHeight: 4.47rem;
+
+$borderRadius: 0.2rem;
+
+.home-banner {
+  padding-top: 0.48rem;
+  height: 4.47rem;
+
+  .slider-list {
+    height: $bannerHeight !important;
+
+    img {
+      height: $bannerHeight;
+      border-radius: $borderRadius;
+    }
+
+    .tag {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      padding: 0 0.2rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 0.34rem;
+      color: #fff;
+      border-top-left-radius: $borderRadius;
+      border-bottom-right-radius: $borderRadius;
+      // background-color: red;
+    }
+  }
+}

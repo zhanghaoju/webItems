@@ -1,0 +1,106 @@
+body,
+div,
+span,
+header,
+footer,
+section,
+aside,
+article,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+em,
+textarea,
+button,
+input,
+select {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: "Microsoft Yahei", sans-serif; }
+  body:focus,
+  div:focus,
+  span:focus,
+  header:focus,
+  footer:focus,
+  section:focus,
+  aside:focus,
+  article:focus,
+  ul:focus,
+  ol:focus,
+  dl:focus,
+  dt:focus,
+  dd:focus,
+  li:focus,
+  a:focus,
+  p:focus,
+  h1:focus,
+  h2:focus,
+  h3:focus,
+  h4:focus,
+  h5:focus,
+  h6:focus,
+  i:focus,
+  b:focus,
+  em:focus,
+  textarea:focus,
+  button:focus,
+  input:focus,
+  select:focus {
+    outline: none; }
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 0.12rem;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden; }
+
+#root {
+  display: flex;
+  flex-direction: column; }
+  #root .body {
+    flex: 1;
+    height: 100%;
+    overflow: hidden; }
+  #root .footer-tabBar {
+    height: 1.44rem; }
+
+/*# sourceMappingURL=reset.css.map */

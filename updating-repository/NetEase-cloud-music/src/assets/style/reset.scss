@@ -1,0 +1,91 @@
+body,
+div,
+span,
+header,
+footer,
+section,
+aside,
+article,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+em,
+textarea,
+button,
+input,
+select {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-family: "Microsoft Yahei", sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 0.12rem;
+  line-height: 1.5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 字体图标用到的
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+@import "./var.scss";
+
+#root {
+  display: flex;
+  flex-direction: column;
+
+  .body {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .footer-tabBar {
+    height: $footerTabBarHeight;
+  }
+}

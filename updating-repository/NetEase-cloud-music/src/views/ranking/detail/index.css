@@ -1,0 +1,48 @@
+.ranking-detail {
+  height: 100%; }
+  .ranking-detail-container {
+    height: 100%;
+    margin-top: -1.32rem; }
+    .ranking-detail-container-bg {
+      height: 9rem;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .ranking-detail-container-list {
+      height: calc(100vh - (2.76rem));
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      background-color: #fff;
+      margin-top: -0.5rem; }
+      .ranking-detail-container-list ul {
+        padding: 0 0.48rem;
+        overflow: hidden; }
+        .ranking-detail-container-list ul .ranking-detail-item {
+          display: flex;
+          margin-top: 0.3rem; }
+          .ranking-detail-container-list ul .ranking-detail-item .ranking-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-right: 0.3rem; }
+            .ranking-detail-container-list ul .ranking-detail-item .ranking-info .ranking-num {
+              width: 1rem;
+              font-size: 0.42rem;
+              color: #adafb2; }
+              .ranking-detail-container-list ul .ranking-detail-item .ranking-info .ranking-num.top3 {
+                color: #cd443e; }
+            .ranking-detail-container-list ul .ranking-detail-item .ranking-info .rank-change {
+              font-size: 0.2rem;
+              color: #797879; }
+          .ranking-detail-container-list ul .ranking-detail-item .music-info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column; }
+            .ranking-detail-container-list ul .ranking-detail-item .music-info .name {
+              font-size: 0.5rem;
+              color: #303031; }
+            .ranking-detail-container-list ul .ranking-detail-item .music-info .detailedness-name {
+              font-size: 0.35rem;
+              color: #797879; }
+
+/*# sourceMappingURL=index.css.map */

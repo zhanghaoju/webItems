@@ -1,0 +1,84 @@
+@import "../../../assets/style/var.scss";
+
+.ranking-detail {
+  height: 100%;
+
+  &-container {
+    height: 100%;
+    // background-color: #ff0;
+
+    margin-top: -$homeHeaderHeight + -$homeHeaderPadding * 2;
+
+    &-bg {
+      // margin-top: -$homeHeaderHeight + -$homeHeaderPadding * 2;
+      height: 9rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-list {
+      // background-color: yellowgreen;
+      // height: 16.26rem; // 这里不能写固定的 高度  因为 相同的机型  浏览器表现的高度也不一致 
+      // 通过 calc ??
+      // 这里不能用 100% 的原因 父元素 是 scroll 组件
+      // 100 vh 在 ios safari chrome 存在一点小问题 暂时先这样
+      // 
+      height: calc(100vh - (#{$homeHeaderHeightReal + $footerTabBarHeight}));
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      // overflow: hidden;
+      background-color: #fff;
+      margin-top: -0.5rem;
+
+      ul {
+        // height: 20000px;
+        padding: 0 $bothPadding;
+        overflow: hidden;
+
+        .ranking-detail-item {
+          display: flex;
+          margin-top: 0.3rem;
+
+          .ranking-info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin-right: 0.3rem;
+
+            .ranking-num {
+              width: 1rem;
+              font-size: 0.42rem;
+              color: #adafb2;
+
+              &.top3 {
+                color: #cd443e;
+              }
+            }
+
+            .rank-change {
+              font-size: 0.2rem;
+              color: #797879;
+            }
+          }
+
+          .music-info {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .name {
+              font-size: 0.5rem;
+              color: #303031;
+            }
+
+            .detailedness-name {
+              font-size: 0.35rem;
+              color: #797879;
+            }
+          }
+        }
+      }
+    }
+  }
+}

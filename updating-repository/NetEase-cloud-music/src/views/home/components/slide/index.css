@@ -1,0 +1,21 @@
+.home-banner {
+  padding-top: 0.48rem;
+  height: 4.47rem; }
+  .home-banner .slider-list {
+    height: 4.47rem !important; }
+    .home-banner .slider-list img {
+      height: 4.47rem;
+      border-radius: 0.2rem; }
+    .home-banner .slider-list .tag {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      padding: 0 0.2rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 0.34rem;
+      color: #fff;
+      border-top-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,9 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff; }
+  .home .home-srcoll {
+    height: calc(100% - 1.32rem); }
+
+/*# sourceMappingURL=index.css.map */
